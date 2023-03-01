@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background" >
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_background"
+            tools:context=".presentation.fragments.SignupFragment">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/user_dp_placeholder"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <ImageView
+                android:id="@+id/btn_upload"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/white_radius"
+                android:padding="5dp"
+                android:src="@drawable/upload_icon"
+                app:layout_constraintBottom_toBottomOf="@id/iv_profile"
+                app:layout_constraintRight_toRightOf="@id/iv_profile">
+
+            </ImageView>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/iv_profile"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_create_acc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/create_new_acc"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_edittext_bg"
+                    android:hint="@string/username"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:nextFocusDown="@id/et_email"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintTop_toBottomOf="@id/tv_create_acc"
+
+                    >
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round_edittext_bg"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="30"
+                    android:nextFocusDown="@id/et_pass"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintTop_toBottomOf="@id/et_username"
+
+                    >
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/et_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round_edittext_bg"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:nextFocusDown="@id/et_confirm_pass"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintTop_toBottomOf="@id/et_email"
+
+                    >
+
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/iv_show_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/ic_baseline_visibility_off_24"
+                    app:layout_constraintBottom_toBottomOf="@id/et_pass"
+                    app:layout_constraintRight_toRightOf="@id/et_pass"
+                    app:layout_constraintTop_toTopOf="@id/et_pass"
+                    app:tint="@color/white">
+
+                </ImageView>
+
+                <EditText
+                    android:id="@+id/et_confirm_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round_edittext_bg"
+                    android:hint="@string/repeat_pass"
+                    android:inputType="textPassword"
+                    android:nextFocusDown="@id/et_number"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintTop_toBottomOf="@id/et_pass"
+
+                    >
+
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/iv_show_repeat_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/ic_baseline_visibility_off_24"
+                    app:layout_constraintBottom_toBottomOf="@id/et_confirm_pass"
+                    app:layout_constraintRight_toRightOf="@id/et_confirm_pass"
+                    app:layout_constraintTop_toTopOf="@id/et_confirm_pass"
+                    app:tint="@color/white">
+
+                </ImageView>
+
+<!--                <EditText-->
+<!--                    android:id="@+id/et_number"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="45dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:background="@drawable/round_edittext_bg"-->
+<!--                    android:hint="@string/number"-->
+<!--                    android:inputType="phone"-->
+<!--                    android:maxLength="15"-->
+<!--                    android:nextFocusDown="@id/btn_create"-->
+<!--                    android:paddingLeft="20dp"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textColorHint="@color/white"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/et_confirm_pass">-->
+
+<!--                </EditText>-->
+
+                <com.vicmikhailau.maskededittext.MaskedEditText
+                    android:id="@+id/et_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round_edittext_bg"
+                    android:hint="@string/number"
+                    app:mask="+# (###) ###-####"
+                    android:inputType="phone"
+                    android:maxLength="17"
+                    android:nextFocusDown="@id/btn_create"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintTop_toBottomOf="@id/et_confirm_pass">
+
+                </com.vicmikhailau.maskededittext.MaskedEditText>
+
+                <EditText
+                    android:id="@+id/et_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round_edittext_bg"
+                    android:gravity="start"
+                    android:hint="@string/description"
+                    android:inputType="textMultiLine"
+                    android:maxLength="100"
+                    android:nextFocusDown="@id/btn_create"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintTop_toBottomOf="@id/et_number">
+
+                </EditText>
+
+                <RelativeLayout
+                    android:id="@+id/et_gender_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round_edittext_bg"
+                    app:layout_constraintTop_toBottomOf="@id/et_description">
+
+                    <Spinner
+                        android:id="@+id/sp_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        android:nextFocusDown="@id/btn_create"
+                        android:paddingLeft="20dp"
+                        android:popupBackground="@color/purple_500"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white">
+
+                    </Spinner>
+
+                    <!-- Changing logic from string.xml-->
+                    <!--            <androidx.appcompat.widget.AppCompatTextView-->
+                    <!--                android:id="@+id/tvSpGenderTitle"-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_centerVertical="true"-->
+                    <!--                android:paddingLeft="20dp"-->
+                    <!--                android:text="Select Gender"-->
+                    <!--                android:textColor="@color/white"-->
+                    <!--                android:textColorHint="@color/white"-->
+                    <!--                android:textSize="18sp" />-->
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_action_arrow_down" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_create"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button_bg"
+                    android:text="@string/create"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toBottomOf="@id/et_gender_container"
+
+                    >
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+
+                <!--   <TextView
+               android:id="@+id/tv_signup_with"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="5dp"
+               android:textStyle="bold"
+               android:text="@string/signup_with"
+               android:textColor="@color/white"
+               android:layout_marginTop="40dp"
+               app:layout_constraintTop_toBottomOf="@id/btn_create"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintRight_toRightOf="parent"
+               >
+
+           </TextView>
+
+           <ImageView
+               android:id="@+id/btn_gmail"
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:layout_marginTop="10dp"
+               android:src="@drawable/google_icon"
+               app:layout_constraintRight_toLeftOf="@id/btn_fb"
+               app:layout_constraintTop_toBottomOf="@id/tv_signup_with"
+               app:layout_constraintLeft_toLeftOf="@id/tv_signup_with"
+               >
+
+           </ImageView>
+
+           <ImageView
+               android:id="@+id/btn_fb"
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:layout_marginTop="10dp"
+               android:src="@drawable/facebook_icon"
+               app:layout_constraintLeft_toRightOf="@id/btn_gmail"
+               app:layout_constraintTop_toBottomOf="@id/tv_signup_with"
+               app:layout_constraintRight_toRightOf="@id/tv_signup_with"
+               >
+
+           </ImageView>-->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

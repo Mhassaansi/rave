@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.fragments.MyProfileFragment">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cover_layout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/image_purple_shade"
+                >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/iv_cover_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.7"
+                android:background="@color/black"
+                >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/btn_edit_cover"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:background="@drawable/round_button_bg"
+                android:src="@drawable/edit_icon"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                >
+
+            </ImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="40dp"
+
+            android:layout_marginTop="-70dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20dp"
+            app:layout_constraintTop_toBottomOf="@id/cover_layout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                >
+
+                <ImageView
+                    android:id="@+id/iv_profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:showBottomShadow="true"
+                    app:bottomShadowAlpha="0.6"
+                    app:bottomShadowHeight="64dp"
+                    app:showCaption="false"
+                    app:showIndicator="true"
+                    android:scaleType="centerCrop"
+                    tools:background="@drawable/user_dp_placeholder">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/btn_edit_image"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="8dp"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:background="@drawable/round_button_bg"
+                    android:src="@drawable/edit_icon"
+                    app:layout_constraintRight_toRightOf="@id/iv_profile_image"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_profile_image"
+                    >
+
+                </ImageView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            app:layout_constraintTop_toBottomOf="@id/cv_profile_image"
+            app:layout_constraintBottom_toTopOf="@id/btn_connect_spotify"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="30dp"
+
+                >
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Natasha, 25"
+                    android:singleLine="true"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:maxLength="30"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent">
+
+                </TextView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_edit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/edit_profile"
+                    android:textSize="9sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_button_bg"
+                    app:layout_constraintTop_toTopOf="@id/tv_name"
+                    app:layout_constraintLeft_toRightOf="@id/tv_name"
+                    >
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <TextView
+                    android:id="@+id/tv_profession"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    tools:text="Fashion Designer"
+                    android:visibility="gone"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_name">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_bio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    tools:text="Dollas girl sharing alot of affordable fashion"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_profession"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_name">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/iv_pin"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/red_pin"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_bio"
+                    app:layout_constraintTop_toTopOf="@id/tv_location"
+                    >
+
+                </ImageView>
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    tools:text="California"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_bio"
+                    app:layout_constraintLeft_toRightOf="@id/iv_pin"
+                    >
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/tv_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/gender"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/tv_location"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_name"
+                    >
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/tv_gender_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Male"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_gender"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_name">
+
+                </TextView>
+
+<!--                @string/mobile-->
+                <TextView
+                    android:id="@+id/tv_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/number"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/tv_gender_detail"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_name"
+                    >
+
+                </TextView>
+
+
+                <com.vicmikhailau.maskededittext.MaskedEditText
+                    android:id="@+id/tv_mobile_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="+ 12341657987"
+                    android:textSize="16sp"
+                    android:background="@null"
+                    android:editable="false"
+                    app:layout_constraintTop_toBottomOf="@id/tv_mobile"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_name">
+
+                </com.vicmikhailau.maskededittext.MaskedEditText>
+
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/email"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/tv_mobile_num"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_name"
+                    >
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/tv_email_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="natasha@gmail.com"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_email"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_name">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_preferences"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/Preferences"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/tv_email_txt"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_name"
+                    >
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/tv_preferences_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="fashion, art, travelling"
+                    android:textSize="16sp"
+                    android:drawablePadding="15dp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_preferences"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_name"
+                    app:drawableStartCompat="@drawable/bullet">
+
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_connect_spotify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button_bg"
+            android:text="@string/connect_spotify"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="35dp"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@id/btn_preferences"
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_preferences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button_bg"
+            android:text="@string/Preferences"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAllCaps="false"
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

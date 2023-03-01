@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:nestedScrollingEnabled="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_background"
+    tools:context=".presentation.fragments.SettingsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:nestedScrollingEnabled="false"
+
+        >
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:src="@drawable/main_logo"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+    </ImageView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="35dp"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@string/settings"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            >
+
+        </TextView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_geolocation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:background="@drawable/round_button_bg"
+            app:layout_constraintTop_toBottomOf="@id/tv_settings"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_geolocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/geo_location"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                >
+
+            </TextView>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:trackTint="@color/white"
+                app:thumbTint="@color/black"
+                android:backgroundTint="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                >
+
+            </androidx.appcompat.widget.SwitchCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_push_noti"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_button_bg"
+            app:layout_constraintTop_toBottomOf="@id/btn_geolocation"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_push_notifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/push_notification"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                >
+
+            </TextView>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/notification_combobox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:trackTint="@color/white"
+                app:thumbTint="@color/black"
+                android:backgroundTint="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                >
+
+            </androidx.appcompat.widget.SwitchCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_term"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/terms"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/round_button_bg"
+            app:layout_constraintTop_toBottomOf="@id/btn_push_noti"
+
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/help_support"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/round_button_bg"
+            app:layout_constraintTop_toBottomOf="@id/btn_term"
+
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_change_pas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/change_password"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/round_button_bg"
+            app:layout_constraintTop_toBottomOf="@id/btn_help"
+
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_delete_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/delete_account"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/round_button_bg"
+            app:layout_constraintTop_toBottomOf="@id/btn_change_pas"
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/round_button_bg"
+            android:gravity="center"
+            android:text="@string/logout"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

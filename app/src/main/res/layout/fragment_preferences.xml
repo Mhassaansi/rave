@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.fragments.PreferencesFragment">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_male"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/male"
+        android:elevation="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/round_button_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_female"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_female"
+        android:layout_width="0dp"
+        android:layout_marginTop="70dp"
+        android:layout_height="wrap_content"
+        android:text="@string/female"
+        android:layout_marginLeft="5dp"
+        android:textAllCaps="false"
+        android:textColor="@color/gray"
+        android:background="@drawable/round_button_white_bg"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_male"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_couple"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/couple"
+        android:elevation="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gray"
+        android:textAllCaps="false"
+        android:background="@drawable/round_button_white_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/btn_male"
+        app:layout_constraintTop_toBottomOf="@id/btn_male"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <TextView
+        android:id="@+id/tv_spotify_playlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/spotify_playlist"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_couple"
+        >
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_spotify_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        tools:listitem="@layout/item_song"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/tv_spotify_playlist"
+        app:layout_constraintBottom_toTopOf="@id/btn_save_changes"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_save_changes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_changes"
+        android:layout_marginBottom="30dp"
+        android:textAllCaps="false"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/round_button_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

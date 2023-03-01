@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.fragments.UserProfileFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="20dp"
+        android:layout_marginTop="70dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+          <!--          <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/user_dp"
+                        android:src="@drawable/image_black_shade"
+                        >
+
+                    </ImageView>-->
+
+<!--                    <org.imaginativeworld.whynotimagecarousel.ImageCarousel-->
+<!--                        android:id="@+id/carousel"-->
+<!--                        app:showBottomShadow="true"-->
+<!--                        app:bottomShadowAlpha="0.6"-->
+<!--                        app:bottomShadowHeight="64dp"-->
+<!--                        app:showCaption="false"-->
+<!--                        app:showIndicator="true"-->
+<!--                        app:showNavigationButtons="false"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent" />-->
+
+
+
+
+                    <ImageView
+                        android:id="@+id/carousel"
+                        app:showBottomShadow="true"
+                        app:bottomShadowAlpha="0.6"
+                        app:bottomShadowHeight="64dp"
+                        app:showCaption="false"
+                        app:showIndicator="true"
+                        android:scaleType="centerCrop"
+                        android:foreground="@drawable/image_black_shade"
+                        tools:src="@drawable/user_dp_placeholder"
+                        app:showNavigationButtons="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+<!--                    android:textColor="@color/white"-->
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Natasha, 25"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@id/tv_profession"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_profession">
+
+                    </TextView>
+
+<!--                    android:textColor="@color/white"-->
+                    <TextView
+                        android:id="@+id/tv_profession"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:layout_marginBottom="25dp"
+                        tools:text="Fashion Designer"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent">
+
+                    </TextView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_about_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/about_me"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_profile_image"
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/tv_about_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="Fashion Designer, Vlogger, Artist, Photographer, Got abc humor to die"
+                android:ellipsize="end"
+                android:maxLines="3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_about_me"
+                app:layout_constraintStart_toStartOf="@id/tv_about_me">
+
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_photos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_about_detail"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_photos"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/tv_spotify_playlists"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/spotify_playlist"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_photos"
+                >
+
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_spotify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_spotify_playlists"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_spotify"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/chat"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/round_button_bg"
+                app:layout_constraintTop_toBottomOf="@id/rv_spotify"
+
+                >
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/block"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/round_button_bg"
+                app:layout_constraintTop_toBottomOf="@id/btn_chat"
+
+                >
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <View
+                android:layout_width="match_parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_block"
+                android:layout_height="2dp">
+
+            </View>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

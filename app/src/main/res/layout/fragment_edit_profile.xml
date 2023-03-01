@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".presentation.fragments.EditProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cover_layout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:background="@drawable/image_purple_shade">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/iv_cover2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:background="@drawable/image_purple_shade">
+
+            </ImageView>
+
+
+
+
+
+            <ImageView
+                android:id="@+id/btn_edit_cover"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/round_button_bg"
+                android:padding="10dp"
+                android:src="@drawable/edit_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+            </ImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="40dp"
+
+            android:layout_marginTop="-70dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cover_layout">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <ImageView
+                    android:id="@+id/iv_profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:background="@drawable/user_dp_placeholder">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/btn_edit_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/round_button_bg"
+                    android:padding="10dp"
+                    android:src="@drawable/edit_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent">
+
+                </ImageView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Natasha, 25"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/cv_profile_image"
+            app:layout_constraintTop_toBottomOf="@id/cv_profile_image">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/tv_profession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            tools:text="Fashion Designer">
+
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/tv_bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_edittext_bg_black"
+            android:minHeight="40dp"
+            android:maxLength="80"
+            android:padding="10dp"
+            tools:text="Dollas girl sharing alot of affordable fashion"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_profession">
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/tv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_edittext_bg_black"
+            android:drawableLeft="@drawable/red_pin"
+            android:minHeight="40dp"
+            android:paddingHorizontal="10dp"
+            android:text="California"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/tv_bio">
+
+        </EditText>
+
+
+        <TextView
+            android:id="@+id/tv_mobile_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_edittext_bg_black"
+            android:minHeight="40dp"
+            android:padding="10dp"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_location"
+            tools:text="+ 12341657987">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/tv_email_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_edittext_bg_black"
+            android:minHeight="40dp"
+            android:padding="10dp"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_mobile_num"
+            tools:text="natasha@gmail.com">
+
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/et_gender_container"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:minHeight="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="35dp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_email_txt"
+            android:background="@drawable/round_edittext_bg_black">
+
+            <Spinner
+                android:id="@+id/sp_gender"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:nextFocusDown="@id/btn_create"
+                android:paddingLeft="20dp"
+                android:popupBackground="@color/purple_500"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black">
+
+            </Spinner>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSpGenderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="20dp"
+                android:text="Select Gender"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_action_arrow_down"
+                app:tint="@color/black"
+                />
+
+        </RelativeLayout>
+
+<!--        android:layout_marginHorizontal="120dp"-->
+        <HorizontalScrollView
+            android:id="@+id/layout_pref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="70dp"
+            app:layout_constraintTop_toBottomOf="@id/et_gender_container">
+
+            <LinearLayout
+                android:id="@+id/horizontalConatinerLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <!-- Containner 1-->
+<!--                android:layout_width="55dp"-->
+<!--                android:layout_height="55dp"-->
+                <FrameLayout
+                    android:id="@+id/btn_container_1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/btn_add_1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/round_purple_shaded_bg"
+                        android:padding="13dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/add_icon"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/uploadImageHost1"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/round_outline"
+                        android:clipToOutline="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+<!--                    cross_icon-->
+                    <ImageView
+                        android:id="@+id/icon_1"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="top|right"
+                        android:adjustViewBounds="true"
+                        android:paddingTop="-20dp"
+                        android:visibility="invisible"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/ic_baseline_cancel_24_white" />
+
+                </FrameLayout>
+
+                <!-- Containner 2-->
+                <FrameLayout
+                    android:id="@+id/btn_container_2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="5dp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/btn_add_2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/round_purple_shaded_bg"
+                        android:padding="13dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/add_icon"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/uploadImageHost2"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/round_outline"
+                        android:clipToOutline="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                    <ImageView
+                        android:id="@+id/icon_2"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="top|right"
+                        android:visibility="invisible"
+                        android:adjustViewBounds="true"
+                        android:paddingTop="-20dp"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/ic_baseline_cancel_24_white" />
+
+                </FrameLayout>
+
+                <!-- Containner 3-->
+                <FrameLayout
+                    android:id="@+id/btn_container_3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="5dp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/btn_add_3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round_purple_shaded_bg"
+                        android:padding="13dp"
+                        android:src="@drawable/add_icon"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/uploadImageHost3"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/round_outline"
+                        android:clipToOutline="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                    <ImageView
+                        android:id="@+id/icon_3"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:visibility="invisible"
+                        android:layout_gravity="top|right"
+                        android:adjustViewBounds="true"
+                        android:paddingTop="-20dp"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/ic_baseline_cancel_24_white" />
+
+                </FrameLayout>
+
+                <!-- Containner 4-->
+                <FrameLayout
+                    android:id="@+id/btn_container_4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/btn_add_4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round_purple_shaded_bg"
+                        android:padding="13dp"
+                        android:src="@drawable/add_icon"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/uploadImageHost4"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/round_outline"
+                        android:clipToOutline="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:id="@+id/icon_4"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="top|right"
+                        android:adjustViewBounds="true"
+                        android:paddingTop="-20dp"
+                        android:visibility="invisible"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/ic_baseline_cancel_24_white" />
+
+                </FrameLayout>
+
+                <!-- Containner 5-->
+                <FrameLayout
+                    android:id="@+id/btn_container_5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/btn_add_5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round_purple_shaded_bg"
+                        android:padding="13dp"
+                        android:src="@drawable/add_icon"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/uploadImageHost5"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/round_outline"
+                        android:clipToOutline="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:id="@+id/icon_5"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="top|right"
+                        android:adjustViewBounds="true"
+                        android:paddingTop="-20dp"
+                        android:scaleType="fitStart"
+                        android:visibility="invisible"
+                        android:src="@drawable/ic_baseline_cancel_24_white" />
+
+                </FrameLayout>
+
+                <!-- Containner 6-->
+                <FrameLayout
+                    android:id="@+id/btn_container_6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/btn_add_6"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round_purple_shaded_bg"
+                        android:padding="13dp"
+                        android:src="@drawable/add_icon"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/uploadImageHost6"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/round_outline"
+                        android:clipToOutline="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                    <ImageView
+                        android:id="@+id/icon_6"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="top|right"
+                        android:adjustViewBounds="true"
+                        android:paddingTop="-20dp"
+                        android:visibility="visible"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/ic_baseline_cancel_24_white" />
+
+                </FrameLayout>
+
+                <!-- Containner 7-->
+                <FrameLayout
+                    android:id="@+id/btn_container_7"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/btn_add_7"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round_purple_shaded_bg"
+                        android:padding="13dp"
+                        android:src="@drawable/add_icon"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/uploadImageHost7"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/round_outline"
+                        android:clipToOutline="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:id="@+id/icon_7"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="top|right"
+                        android:adjustViewBounds="true"
+                        android:paddingTop="-20dp"
+                        android:scaleType="fitStart"
+                        android:visibility="invisible"
+                        android:src="@drawable/ic_baseline_cancel_24_white" />
+
+                </FrameLayout>
+
+                <!-- Containner 8-->
+                <FrameLayout
+                    android:id="@+id/btn_container_8"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/btn_add_8"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/round_purple_shaded_bg"
+                        android:padding="13dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/add_icon"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/uploadImageHost8"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/round_outline"
+                        android:clipToOutline="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:id="@+id/icon_8"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="top|right"
+                        android:adjustViewBounds="true"
+                        android:paddingTop="-20dp"
+                        android:visibility="invisible"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/ic_baseline_cancel_24_white" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/layout_pref"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="70dp"-->
+        <!--            android:layout_marginHorizontal="120dp"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/tv_email_txt"-->
+        <!--            >-->
+        <!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:id="@+id/btn_add_1"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_width="50dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_height="50dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:src="@drawable/add_icon"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:padding="13dp"&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                android:background="@drawable/round_purple_shaded_bg"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:textColor="@color/white"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_marginBottom="20dp"&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                app:layout_constraintLeft_toLeftOf="parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                >&ndash;&gt;-->
+
+        <!--&lt;!&ndash;            </ImageView>&ndash;&gt;-->
+        <!--            <FrameLayout-->
+        <!--                android:id="@+id/btn_container_1"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent"-->
+        <!--                android:layout_width="55dp"-->
+        <!--                android:layout_height="55dp">-->
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/btn_add"-->
+        <!--                    android:layout_width="50dp"-->
+        <!--                    android:layout_height="50dp"-->
+        <!--                    android:src="@drawable/add_icon"-->
+        <!--                    android:padding="13dp"-->
+        <!--                    android:background="@drawable/round_purple_shaded_bg"-->
+        <!--                    android:textColor="@color/white"-->
+        <!--                    android:layout_marginBottom="20dp"-->
+        <!--                    />-->
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/icon"-->
+        <!--                    android:layout_width="10dp"-->
+        <!--                    android:layout_height="10dp"-->
+        <!--                    android:layout_gravity="top|right"-->
+        <!--                    android:adjustViewBounds="true"-->
+        <!--                    android:paddingTop="-20dp"-->
+        <!--                    android:scaleType="fitStart"-->
+        <!--                    android:src="@drawable/cross_icon" />-->
+
+        <!--            </FrameLayout>-->
+
+        <!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:id="@+id/btn_add2"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_width="50dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_height="50dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:src="@drawable/add_icon"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:padding="13dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:background="@drawable/round_purple_shaded_bg"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:textColor="@color/white"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_marginBottom="20dp"&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                app:layout_constraintLeft_toRightOf="@id/btn_container_1"&ndash;&gt;-->
+        <!--&lt;!&ndash;                app:layout_constraintRight_toLeftOf="@id/btn_add3"&ndash;&gt;-->
+        <!--&lt;!&ndash;                >&ndash;&gt;-->
+
+        <!--&lt;!&ndash;            </ImageView>&ndash;&gt;-->
+        <!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:id="@+id/btn_add3"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_width="50dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_height="50dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:src="@drawable/add_icon"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:padding="13dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:background="@drawable/round_purple_shaded_bg"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:textColor="@color/white"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_marginBottom="20dp"&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                app:layout_constraintRight_toRightOf="parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                >&ndash;&gt;-->
+
+        <!--&lt;!&ndash;            </ImageView>&ndash;&gt;-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save_changes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/round_button_bg"
+            android:gravity="center"
+            android:text="@string/save_changes"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_pref">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+<!--        &lt;!&ndash; Pics download progressbar &ndash;&gt;-->
+<!--        <ProgressBar-->
+<!--            android:id="@+id/user_pics_progress_bar"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:visibility="gone"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            android:indeterminate="true"-->
+<!--            android:indeterminateTint="@color/colorPrimaryDark"-->
+<!--            android:indeterminateTintMode="src_atop" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

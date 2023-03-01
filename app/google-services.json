@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "217072362646",
+    "project_id": "ravebae-eeb58",
+    "storage_bucket": "ravebae-eeb58.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217072362646:android:0e71e0af9a6f2e04baceb7",
+        "android_client_info": {
+          "package_name": "com.fictivestudios.ravebae"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217072362646-lohj4peg71in2r8kddd0v0ba0jdacij6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fictivestudios.ravebae",
+            "certificate_hash": "6ab4b553c7161a29954ac9e9589a4cee65676b9f"
+          }
+        },
+        {
+          "client_id": "217072362646-tmd9ovimucfcrkrerum448ili233siv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWcMt-IzaZKnHytIol0RfZy5yJ3xZXk3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217072362646-tmd9ovimucfcrkrerum448ili233siv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

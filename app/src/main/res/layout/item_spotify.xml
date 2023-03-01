@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    android:src="@drawable/song_img"-->
+    <ImageView
+        android:id="@+id/iv_song_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/music_placeholder"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_song_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:layout_constraintTop_toBottomOf="@id/iv_song_img"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        tools:text="up town funk"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_song_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="7sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_song_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:maxLines="2"
+        android:ellipsize="end"
+        tools:text="up town funk"
+        >
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

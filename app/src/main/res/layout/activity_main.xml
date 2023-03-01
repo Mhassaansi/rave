@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    tools:context=".presentation.activites.MainActivity">
+
+
+    <com.fictivestudios.ravebae.utils.Titlebar
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:background="@color/transparent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+    </com.fictivestudios.ravebae.utils.Titlebar>
+
+    <fragment
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:navGraph="@navigation/navigation_graph"
+        app:defaultNavHost="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomBar"
+
+        >
+
+    </fragment>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomBar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/white"
+        app:itemIconTint="@color/gray"
+
+        android:elevation="-10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu" />
+
+<!--    <me.ibrahimsn.lib.NiceBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu" />-->
+
+    <ImageView
+        android:id="@+id/btn_home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/round_purple_shaded_bg"
+        android:padding="12dp"
+        android:elevation="20dp"
+        android:src="@drawable/home_icon"
+        android:layout_marginTop="-15dp"
+        app:layout_constraintBottom_toBottomOf="@id/bottomBar"
+        app:layout_constraintTop_toTopOf="@id/bottomBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

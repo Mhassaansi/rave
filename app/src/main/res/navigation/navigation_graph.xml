@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/discoverFragment2">
+
+    <fragment
+        android:id="@+id/activityFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.ActivityFragment"
+        android:label="fragment_activity"
+        tools:layout="@layout/fragment_activity" >
+        <action
+            android:id="@+id/action_activityFragment_to_messagesFragment"
+            app:destination="@id/messagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/preferencesFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.PreferencesFragment"
+        android:label="fragment_preferences"
+        tools:layout="@layout/fragment_preferences" />
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <action
+            android:id="@+id/action_userProfileFragment_to_userProfileDetailFragment"
+            app:destination="@id/userProfileDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messagesFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.MessagesFragment"
+        android:label="fragment_messages"
+        tools:layout="@layout/fragment_messages" >
+        <action
+            android:id="@+id/action_messagesFragment_to_activityFragment"
+            app:destination="@id/activityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/conversationFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.ConversationFragment"
+        android:label="fragment_conversation"
+        tools:layout="@layout/fragment_conversation" />
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.MyProfileFragment"
+        android:label="fragment_my_profile"
+        tools:layout="@layout/fragment_my_profile" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/agreementFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.AgreementFragment"
+        android:label="fragment_agreement"
+        tools:layout="@layout/fragment_agreement" />
+    <fragment
+        android:id="@+id/changePassowrdFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.ChangePassowrdFragment"
+        android:label="fragment_change_passowrd"
+        tools:layout="@layout/fragment_change_passowrd" />
+    <fragment
+        android:id="@+id/forgotFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.ForgotFragment"
+        android:label="fragment_forgot"
+        tools:layout="@layout/fragment_forgot" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.OtpFragment"
+        android:label="fragment_otp"
+        tools:layout="@layout/fragment_otp" />
+    <fragment
+        android:id="@+id/preLoginFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.PreLoginFragment"
+        android:label="fragment_pre_login"
+        tools:layout="@layout/fragment_pre_login" />
+    <fragment
+        android:id="@+id/privacyAndPolicyFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.PrivacyAndPolicyFragment"
+        android:label="fragment_privacy_and_policy"
+        tools:layout="@layout/fragment_privacy_and_policy" />
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.ResetPasswordFragment"
+        android:label="fragment_reset_password"
+        tools:layout="@layout/fragment_reset_password" />
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" />
+    <fragment
+        android:id="@+id/termsAndConditionsFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.TermsAndConditionsFragment"
+        android:label="fragment_terms_and_conditions"
+        tools:layout="@layout/fragment_terms_and_conditions" />
+    <fragment
+        android:id="@+id/userProfileDetailFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.userProfileDetailFragment"
+        android:label="fragment_user_profile_detail"
+        tools:layout="@layout/fragment_user_profile_detail" />
+    <fragment
+        android:id="@+id/discoverFragment2"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.DiscoverFragment"
+        android:label="fragment_discover"
+        tools:layout="@layout/fragment_discover" />
+    <fragment
+        android:id="@+id/loginWithPhoneFragment"
+        android:name="com.fictivestudios.ravebae.presentation.fragments.LoginWithPhoneFragment"
+        android:label="fragment_login_with_phone"
+        tools:layout="@layout/fragment_login_with_phone" />
+</navigation>

@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">RaveBae</string>
+
+    <string name="login_with_phone">Login with Phone</string>
+    <string name="login_with_email">Login with Email</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="login_with_google">Login with Google</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password_">Forgot Password</string>
+    <string name="signup_here">&#160;<u><b>Signup Here</b></u></string>
+    <string name="dont_have_account">Don\'t have an account? Signup Here</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+<!--    <string name="singup_here">&#160;<u><b>Signup Here</b>></u>></string>-->
+
+    <string name="create_new_acc">Create New Account</string>
+    <string name="username">Username</string>
+    <string name="repeat_pass">Repeat Password</string>
+    <string name="number">Number</string>
+    <string name="description">Description</string>
+    <string name="create">Create</string>
+    <string name="signup_with">Signup with</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="didnt_received_send_again">Didn\'t Received Send Again</string>
+    <string name="didnt_received_send_again_hyper">&lt;u&gt;Didn\'t Received Send Again&lt;/u&gt;.</string>
+
+    <string name="enter_otp">Enter OTP</string>
+    <string name="send">Send</string>
+    <string name="enter_code">Enter Code</string>
+
+
+    <string name="geo_location">Geolocation</string>
+    <string name="push_notification">Push Notification</string>
+    <string name="terms">Terms &amp; Conditions</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="settings">Settings</string>
+    <string name="privacy">Privacy &amp; Policy</string>
+
+    <string name="password_doesnt_match">Password doesn\'t match</string>
+    <string name="old_pass_and_new_pass_cant_be_same">Old password and new password can\'t be same</string>
+
+    <string name="change_pass">Change Password</string>
+    <string name="old_pass">Old Password</string>
+    <string name="new_pass">New Password</string>
+    <string name="re_enter_pass">Re Enter Password</string>
+    <string name="save">Save</string>
+
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="enter_email_or_phone">Enter Email Or Phone</string>
+
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_phone">Enter Phone</string>
+
+    <string name="chat">Chat</string>
+    <string name="block">Block user</string>
+
+    <string name="reset">Reset</string>
+    <string name="enter_new_pass">Enter New Password</string>
+
+    <string name="agreement">Agreement</string>
+    <string name="accept_terms">Accept Terms</string>
+    <string name="i_have_read_terms">i have read and agreed with Terms &amp; conditions privacy &amp; policy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</string>
+    <string name="i_agree">I Agree</string>
+    <string name="reject">Reject</string>
+
+    <string name="i_have_read_and_accept">I have read and accept to</string>
+
+
+    <string name="about_me">About Me</string>
+    <string name="spotify_playlist">Spotify Playlist</string>
+
+    <string name="edit_profile">Edit Profile</string>
+    <string name="mobile">Mobile</string>
+    <string name="Preferences">Preferences</string>
+    <string name="connect_spotify">Connect Spotify</string>
+
+    <string name="sent">Sent</string>
+    <string name="received">Received</string>
+
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="couple">Couple</string>
+    <string name="save_changes">Save Changes</string>
+
+    <string name="type_message">Type message Here...</string>
+
+    <string name="discover">Discover</string>
+    <string name="activity">Activity</string>
+    <string name="messages">Messages</string>
+    <string name="profile">Profile</string>
+    <string name="preferences">Preferences</string>
+
+    <string name="fields_cant_be_empty">Field\'s can\'t be empty</string>
+    <string name="field_cant_be_empty">field can\'t be empty</string>
+
+
+    <string name="invalid_email_format">Invalid email format</string>
+    <string name="invalid_number_format">format is not valid</string>
+<!--    Password should be 8 characters long (should contain uppercase, lowercase, number and special character)-->
+<!--    <string name="password_must_be">Password must be 8 character long</string>-->
+    <string name="password_must_be">Password should be 8 characters long (should contain uppercase, lowercase, number and special character)</string>
+    <string name="confirm_pass_doesnt_match">Repeat password doesn\'t match</string>
+    <string name="new_and_old_pass_must">new and old password shouldn\'t be same</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="something_went_wrong">Something Went Wrong</string>
+    <string name="ok">OK</string>
+    <string name="please_specify_gender">Please Specify Gender!</string>
+    <string name="gender">Gender</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="no_internet">No Internet</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="sure_delete_account">Are you sure you want to delete your account?</string>
+    <string name="termsAndPolicy">By signing up, you agree to our Terms &amp; Conditions and Privacy Policy</string>
+    <string name="termsAndPolicyIntro">By signing up, you agree to our</string>
+    <string name="termsAndCondition"> Terms &amp; Conditions</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+    <string name="And">&#160;and&#160;</string> <!-- start and trailing spaces-->
+    <!--    <item> </item>-->
+    <string-array name="Gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Couple</item>
+    </string-array>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.fragments.ActivityFragment"
+
+    >
+
+
+    <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+        android:id="@+id/buttonGroup_segmented"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="4dp"
+
+        android:layout_marginTop="70dp"
+        android:elevation="10dp"
+        android:background="@color/white"
+        app:borderColor="@color/white"
+        app:borderWidth="1dp"
+        app:divider="@color/white"
+        app:dividerPadding="10dp"
+        app:dividerWidth="1dp"
+        app:position="0"
+        app:radius="30dp"
+        app:ripple="true"
+        app:rippleColor="@color/gray"
+        app:selectedBackground="@drawable/round_button_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <com.addisonelliott.segmentedbutton.SegmentedButton
+            android:id="@+id/btn_sent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            app:drawableGravity="top"
+            app:selectedTextColor="@color/white"
+            app:text="@string/sent"
+            app:textColor="@color/black" />
+
+        <com.addisonelliott.segmentedbutton.SegmentedButton
+            android:id="@+id/btn_received"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:padding="10dp"
+
+            app:drawableGravity="top"
+            app:selectedTextColor="@color/white"
+            app:text="@string/received"
+            app:textColor="@color/black" />
+
+
+    </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_sent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_sent"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/buttonGroup_segmented"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_received"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_received"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/buttonGroup_segmented"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

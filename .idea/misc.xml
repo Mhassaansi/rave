@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/drawable/edittext_section_drawable.xml" value="0.2385" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/drawable/ic_action_arrow_down.xml" value="0.2065" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/drawable/image_purple_shade.xml" value="0.2665" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/drawable/round_button_bg.xml" value="0.2665" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/drawable/round_button_white_bg.xml" value="0.2665" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/drawable/round_edittext_bg.xml" value="0.2385" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/drawable/round_outline.xml" value="0.1675" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/drawable/round_purple_shaded_bg.xml" value="0.262" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/activity_login.xml" value="0.2201795639162035" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/activity_main.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/confirm_dialog.xml" value="0.19537624660018132" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_activity.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_agreement.xml" value="0.5" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_change_passowrd.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_conversation.xml" value="0.2201795639162035" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_discover.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_edit_profile.xml" value="0.25" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_forgot.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_login.xml" value="0.19519927536231885" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_messages.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_my_profile.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_otp.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_pre_login.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_preferences.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_privacy_and_policy.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_request_received.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_request_sent.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_reset_password.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_settings.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_signup.xml" value="0.25" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_terms_and_conditions.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_user_profile.xml" value="0.2201795639162035" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/fragment_user_profile_detail.xml" value="0.2201795639162035" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/item_message_received.xml" value="0.2201795639162035" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/item_message_sent.xml" value="0.2201795639162035" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/item_messages.xml" value="0.33" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/item_photos.xml" value="0.2201795639162035" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/item_received.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/item_sent.xml" value="0.25" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/item_song.xml" value="0.2201795639162035" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/item_spotify.xml" value="0.2201795639162035" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/item_swipe_card.xml" value="0.33" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/notification.xml" value="0.2201795639162035" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/progress_dialog.xml" value="0.25" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/simple_list_item_dark.xml" value="0.2201795639162035" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/simple_list_item_light.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android Repositories/RaveBae/app/src/main/res/layout/titlebar.xml" value="0.2201795639162035" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/drawable/bullet.xml" value="0.15" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/drawable/ic_baseline_visibility_24.xml" value="0.15" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/drawable/image_black_shade.xml" value="0.15" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/drawable/round_button_bg.xml" value="0.214" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/drawable/round_outline.xml" value="0.164" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/drawable/round_purple_shaded_bg.xml" value="0.1645" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/drawable/spanselector.xml" value="0.15" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/activity_main.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_activity.xml" value="0.109486000835771" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_change_passowrd.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_conversation.xml" value="0.2201795639162035" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_discover.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_edit_profile.xml" value="0.33" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_forgot.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_login.xml" value="0.33" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_messages.xml" value="0.2201795639162035" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_my_profile.xml" value="0.2201795639162035" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_otp.xml" value="0.2" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_pre_login.xml" value="0.25" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_preferences.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_privacy_and_policy.xml" value="0.2201795639162035" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_reset_password.xml" value="0.2201795639162035" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_settings.xml" value="0.2201795639162035" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_signup.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_terms_and_conditions.xml" value="0.2201795639162035" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_user_profile.xml" value="0.37853949329359166" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/fragment_user_profile_detail.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/item_photos.xml" value="0.2201795639162035" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/item_received.xml" value="0.2201795639162035" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/item_sent.xml" value="0.33" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/item_song.xml" value="0.2201795639162035" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/item_spotify.xml" value="0.67" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/item_swipe_card.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/progress_dialog.xml" value="0.2201795639162035" />
+        <entry key="..\:/Users/syed.ahmed.TECHNADO/Documents/git projects/ravebae/app/src/main/res/layout/titlebar.xml" value="0.2201795639162035" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/drawable-v24/fb_button_bg.xml" value="0.2185" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/drawable-v24/round_button_white_bg.xml" value="0.2165" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/drawable-v24/round_purple_shaded_bg.xml" value="0.2165" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/drawable-v24/white_layout_shade.xml" value="0.2165" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/drawable/gmail_button_bg.xml" value="0.2185" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/drawable/image_black_shade.xml" value="0.1995" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/drawable/image_purple_shade.xml" value="0.2165" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/drawable/pink_circle_bg.xml" value="0.2165" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/drawable/round_button_bg.xml" value="0.1465" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/drawable/round_button_white_bg.xml" value="0.2185" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/drawable/round_edittext_bg.xml" value="0.2035" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/drawable/round_edittext_bg_black.xml" value="0.2165" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/drawable/round_white_bg.xml" value="0.2165" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/drawable/white_layout_shade.xml" value="0.1935" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/activity_pre_login.xml" value="0.3605072463768116" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/activity_registeration.xml" value="0.33" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/activity_signup.xml" value="0.33" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/activity_splash2.xml" value="0.33" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/activity_splash_new.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_activity.xml" value="0.22" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_agreement.xml" value="0.33" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_change_passowrd.xml" value="0.3605072463768116" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_conversation.xml" value="0.22" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_discover.xml" value="0.25" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_edit_profile.xml" value="0.33" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_forgot.xml" value="0.3605072463768116" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_login_with_phone.xml" value="0.25" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_messages.xml" value="0.25" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_my_profile.xml" value="0.25" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_otp.xml" value="0.35280797101449274" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_pre_login.xml" value="0.3605072463768116" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_preferences.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_privacy_and_policy.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_profile.xml" value="0.3605072463768116" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_request_received.xml" value="0.25" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_request_sent.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_reset_password.xml" value="0.3605072463768116" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_settings.xml" value="0.25" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_signup.xml" value="0.33" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_terms_and_conditions.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_user_profile.xml" value="0.3605072463768116" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/fragment_user_profile_detail.xml" value="0.2" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/item_message_receive.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/item_message_received.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/item_message_sent.xml" value="0.33" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/item_messages.xml" value="0.25" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/item_photos.xml" value="0.3605072463768116" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/item_received.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/item_sent.xml" value="0.33" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/item_song.xml" value="0.33" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/item_spot.xml" value="0.3605072463768116" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/item_spotify.xml" value="0.33" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/item_swipe_card.xml" value="0.33" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/item_swipe_profile.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/layout/titlebar.xml" value="0.25" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/menu/menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/umair.riaz/AndroidStudioProjects/RaveBae/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2265" />
+        <entry key="..\:/Users/yasir.rehman/AndroidStudioProjects/Git/ravebae/app/src/main/res/layout/fragment_conversation.xml" value="0.19322916666666667" />
+        <entry key="..\:/Users/yasir.rehman/AndroidStudioProjects/Git/ravebae/app/src/main/res/layout/fragment_discover.xml" value="0.13768115942028986" />
+        <entry key="..\:/Users/yasir.rehman/AndroidStudioProjects/Git/ravebae/app/src/main/res/layout/fragment_edit_profile.xml" value="0.13768115942028986" />
+        <entry key="..\:/Users/yasir.rehman/AndroidStudioProjects/Git/ravebae/app/src/main/res/layout/fragment_messages.xml" value="0.1802536231884058" />
+        <entry key="..\:/Users/yasir.rehman/AndroidStudioProjects/Git/ravebae/app/src/main/res/layout/fragment_my_profile.xml" value="0.1707193515704154" />
+        <entry key="..\:/Users/yasir.rehman/AndroidStudioProjects/Git/ravebae/app/src/main/res/layout/fragment_preferences.xml" value="0.246875" />
+        <entry key="..\:/Users/yasir.rehman/AndroidStudioProjects/Git/ravebae/app/src/main/res/layout/fragment_reset_password.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/yasir.rehman/AndroidStudioProjects/Git/ravebae/app/src/main/res/layout/fragment_user_profile.xml" value="0.33" />
+        <entry key="..\:/Users/yasir.rehman/AndroidStudioProjects/Git/ravebae/app/src/main/res/layout/fragment_user_profile_detail.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/yasir.rehman/AndroidStudioProjects/Git/ravebae/app/src/main/res/layout/item_message_received.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/yasir.rehman/AndroidStudioProjects/Git/ravebae/app/src/main/res/layout/item_swipe_card.xml" value="0.13768115942028986" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.16" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
